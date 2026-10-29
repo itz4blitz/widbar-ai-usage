@@ -2,6 +2,18 @@
 
 Windows 11 taskbar widgets for AI coding-plan usage and system sensors. [WidBar](https://apps.microsoft.com/detail/9PKLDNM83TP9) hosts them. This repo is the widget package.
 
+The taskbar is the short reading. Click a widget and the flyout is the full stats.
+
+![Taskbar tiles for CPU, GPUs, RAM, disk, fans, and six AI providers](docs/taskbar.png)
+
+![AI Usage flyout with plan limits, reset times, and spend](docs/ai-usage.png)
+
+![Rest of the AI Usage flyout](docs/ai-usage-more.png)
+
+![System flyout with CPU, GPUs, memory, and disks](docs/system.png)
+
+![Rest of the System flyout, including fans](docs/system-more.png)
+
 Two widgets ship in one package, `Blitz.WidBarAiUsage`:
 
 | Widget | Id | What it shows |

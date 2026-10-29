@@ -1,0 +1,11 @@
+{
+  "id": "com.blitz.system",
+  "name": "System",
+  "description": "CPU, GPUs, RAM, disk and fans from LibreHardwareMonitor.",
+  "category": "System",
+  "version": "1.0.0",
+  "minHostVersion": "1.0.0",
+  "executable": "WidBar.AiUsage.exe",
+  "previewWidth": 557,
+  "configurable": true
+}

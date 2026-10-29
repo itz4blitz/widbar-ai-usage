@@ -1,0 +1,10 @@
+bin/
+obj/
+artifacts/
+research/
+setup/*.log
+setup/*.done
+.vs/
+*.user
+*.suo
+*.key

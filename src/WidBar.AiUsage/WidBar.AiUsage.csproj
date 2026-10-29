@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <UseWinUI>true</UseWinUI>
+    <WinUISDKReferences>false</WinUISDKReferences>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>WidBar.AiUsage</RootNamespace>
+    <AssemblyName>WidBar.AiUsage</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x64</Platforms>
+    <Platform>x64</Platform>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <WindowsAppSDKSelfContained>false</WindowsAppSDKSelfContained>
+    <DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <WidBarPluginId>com.blitz.aiusage</WidBarPluginId>
+    <WidBarPluginName>AI Usage</WidBarPluginName>
+    <WidBarPluginDescription>Plan limits and spend for Claude, Codex, Grok, z.ai, Cursor and OpenCode.</WidBarPluginDescription>
+    <WidBarPluginCategory>Developer</WidBarPluginCategory>
+    <WidBarPluginVersion>1.0.0</WidBarPluginVersion>
+    <!-- 6 * 98 + 5 * 9 + 8. Keep in step with AiUsagePlugin.PreviewLogicalWidth. -->
+    <WidBarPluginPreviewWidth>641</WidBarPluginPreviewWidth>
+    <WidBarPluginConfigurable>true</WidBarPluginConfigurable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+    <Content Include="..\..\package\Icons\*.png" Link="Icons\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" />
+    <PackageReference Include="WidBar.SDK" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.14" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.14" />
+  </ItemGroup>
+
+</Project>
